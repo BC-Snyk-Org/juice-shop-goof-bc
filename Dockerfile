@@ -33,7 +33,7 @@ ARG BUILD_DATE
 ARG VCS_REF
 LABEL org.opencontainers.image.licenses="MIT"
 LABEL org.opencontainers.image.version="1.0.0"
-LABEL org.opencontainers.image.source="https://github.com/somerset-inc/juice-shop-goof"
+LABEL org.opencontainers.image.source="https://github.com/BC-Snyk-Org/juice-shop-goof-bc"
 LABEL io.snyk.containers.image.dockerfile="/Dockerfile"
 WORKDIR /juice-shop
 COPY --from=installer --chown=65532:0 /juice-shop .
