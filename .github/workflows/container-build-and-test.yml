@@ -43,7 +43,7 @@ jobs:
 
         - uses: snyk/actions/setup@master
         - name: Snyk Container Monitor 
-          run: snyk container monitor brookecastleberry6/snyk-juice-shop:linux --tags="component=pkg:${{ github.repository }}@${{ github.ref_name }}" --org=${{ secrets.SNYK_ORG_ID }} --file=Dockerfile -d
+          run: snyk container monitor brookecastleberry6/snyk-juice-shop:linux --tags="component=pkg:${{ github.repository }}@${{ github.ref_name }}" --org=${{ secrets.SNYK_ORG_ID }} --file=Dockerfile
           env:
             SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 
