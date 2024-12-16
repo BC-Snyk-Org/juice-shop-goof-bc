@@ -6,7 +6,7 @@ on:
     - master
 
 env:
-  IMAGE_NAME: brookecastleberry/snyk-juice-shop
+  IMAGE_NAME: brookecastleberry/juice-shop-goof-bc
 
 jobs:
   docker:
@@ -43,7 +43,7 @@ jobs:
 
         - uses: snyk/actions/setup@master
         - name: Snyk Container Monitor 
-          run: snyk container monitor brookecastleberry/snyk-juice-shop:linux --tags="component=pkg:${{ github.repository }}@${{ github.ref_name }}" --org=${{ secrets.SNYK_ORG_ID }} --file=Dockerfile
+          run: snyk container monitor brookecastleberry/juice-shop-goof-bc:linux --tags="component=pkg:${{ github.repository }}@${{ github.ref_name }}" --org=${{ secrets.SNYK_ORG_ID }} --file=Dockerfile
           env:
             SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 
