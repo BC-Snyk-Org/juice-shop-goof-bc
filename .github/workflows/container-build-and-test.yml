@@ -6,7 +6,7 @@ on:
     - master
 
 env:
-  IMAGE_NAME: troysnyk/snyk-juice-shop
+  IMAGE_NAME: brookecastleberry/snyk-juice-shop
 
 jobs:
   docker:
